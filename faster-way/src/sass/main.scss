@@ -15,6 +15,8 @@ body {
 }
 
 .container{
+    width: 80%;
+    margin: 8px auto;
     @include phone {
         width: $small!important;
         margin: 8px auto;
@@ -26,6 +28,30 @@ body {
 }
 
 .cardButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+    padding: 32px 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin-right: 1rem;
+    &:last-child{
+        margin-right: 0;
+    }
+    img{
+        width: 21px;
+        margin-bottom: 23px;
+    }
+    span{
+        background: #EFEFF5;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+        color: #121826;
+        padding: 2px 12px;
+    }
     @include phone{
         display: flex;
         flex-direction: column;
@@ -82,6 +108,10 @@ body {
     }
 }
 .item{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     @include phone {
         margin-top: 8px;
         display: flex;
@@ -97,6 +127,15 @@ body {
 }
 
 .cardResumeComponent{
+        margin: 8px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+        border-radius: 12px;
     @include phone{
         margin: 8px 0;
         display: flex;
@@ -158,6 +197,41 @@ body {
 }
 
 .cardWellcomeComponent{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    span{
+        display: flex;
+        flex-direction: row;
+    }
+    .title{
+        display: flex;
+        padding: 24px;
+        align-items: center;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        color: #6B7280;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        color: #000000;
+    }
+    img{
+        width: 86px;
+        height: 90px;
+    }
     @include phone{
         margin-top: 24px;
         display: flex;
@@ -248,6 +322,17 @@ body {
     color: #B3348D;
 }
 .containerCarrousel {
+        width: 80%;
+        margin: 24px auto;
+        flex-direction: column;
+
+      h1{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        margin-bottom: 17px;
+      }
     @include phone {
         width: 348px!important;
         margin: 24px 0 0 auto;
@@ -277,6 +362,15 @@ body {
 }
 
 .containerFull{
+    margin-top: 60px;
+        margin-bottom: 140px;
+        width: 100%;
+        height: 51px;
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     @include phone{
         margin-top: 40px;
         margin-bottom: 140px;
@@ -302,6 +396,11 @@ body {
 }
 
 .asideMenu{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0;
+    width: 80%;
+    justify-content: center; 
     @include phone{
         display: flex;
         flex-direction: row;
@@ -320,6 +419,32 @@ body {
 }
 
 .cardComponent{
+    width: 200px;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 24px;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+        margin-right: 1rem;
+        &:last-child{
+            margin-right: 0rem;
+        }
+        img{
+            width: 40px;
+        }
+    
+        p{  
+            width: 56px;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 10px;
+            line-height: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     @include phone{
         background-color: $white-color;
         display: flex;
@@ -369,6 +494,14 @@ body {
 }
 
 .carrouselBanner{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar{
+        display: none;
+    }
     @include phone {
         display: flex;
         flex-direction: row;
@@ -392,6 +525,38 @@ body {
 }
 
 .cardBannerComponent{
+    position: relative;
+    margin-right: 12px;
+    flex: 1;
+    img{
+        width: 100%;
+        position: relative;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.8) 100%);
+        border-radius: 0px 0px 8px 8px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        span{
+           
+            
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            color: #ffffff;
+        }
+        h5{
+            
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: #ffffff;
+        }
+    }
     @include phone{
         position: relative;
         margin-right: 12px;
@@ -463,6 +628,10 @@ body {
 }
 
 .headerComponent {
+        padding: 8px 0 14px;
+        display: flex;
+        justify-content: center;
+        background-color: $primary-color;
     @include phone {
         padding: 8px 0 14px;
         display: flex;
@@ -478,6 +647,39 @@ body {
 }
 
 .NavBottomBar {
+    background-color: $light-color;
+        z-index: 100000;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 12px 0;
+        ul {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+
+                a {
+                    font-size: 10px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: $dark-color;
+
+                    img {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
     @include phone {
         background-color: $light-color;
         z-index: 100000;
@@ -553,6 +755,14 @@ body {
 }
 
 .backNavComponent{
+    width: $small;
+    margin: 24px;
+    align-items: center;
+    position: absolute;
+    img{
+        width: 32px;
+        height: 32px;
+    }
     @include phone {
         width: $small;
         margin: 24px;
@@ -564,7 +774,7 @@ body {
         }
     }
     @include phone-m {
-        width: $small2;
+        width: $small;
         margin: 24px;
         align-items: center;
         position: absolute;
@@ -576,6 +786,37 @@ body {
 }
 
 .cardModal{
+    border-radius: 32px 32px 0 0 ;
+        padding: 32px 24px;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        .headerModal{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            
+            .text{
+                h2{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 120%;
+                    color: #121826;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.2px;
+                    color: #64748B;
+
+                }
+            }
+        }
     @include phone {
         border-radius: 32px 32px 0 0 ;
         padding: 32px 24px;
@@ -642,6 +883,10 @@ body {
     }
 }
 .accordion__button{
+    background-color: transparent!important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     @include phone {
         background-color: transparent!important;
         display: flex;
@@ -656,6 +901,8 @@ body {
     }
 }
 .accordion__heading, .accordion__item{
+    border-radius: 16px!important;
+        overflow: hidden;
     @include phone {
         border-radius: 16px!important;
         overflow: hidden;
@@ -666,6 +913,7 @@ body {
     }
 }
 .accordion__heading{
+    margin-bottom: 0px!important;
     @include phone {
         margin-bottom: 0px!important;
     }
@@ -674,6 +922,12 @@ body {
     }
 }
 .accordion__item{
+    border: 1px solid #E2E8F0!important;
+    margin-bottom: 8px;
+    &:hover{
+        border: 1px solid #7CCBC7!important;
+        background-color: #F8FAFC;
+    }
     @include phone {
         border: 1px solid #E2E8F0!important;
         margin-bottom: 8px;
@@ -693,6 +947,8 @@ body {
 }
 
 .accordion{
+    border: 0px!important;
+    border-radius: 8px!important;
     @include phone {
         border: 0px!important;
         border-radius: 8px!important;
@@ -710,31 +966,49 @@ body {
     font-size: 10px;
     line-height: 12px;
     color: #121826;
-    padding: 8px 36px;
-    width: 129px;
+    padding: 8px 24px;
+    margin-bottom: 8px;
 }
 .containerAccordion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @include phone {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     @include phone-m {
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
 .coverProfile{
+    img{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        object-fit: fill;
+   }
     @include phone {
        img{
             width: 100%;
+            background-size: cover;
+            background-position: center;
+            object-fit: fill;
        }
     }
     @include phone-m {
         img{
-             width: 100%;
+            width: 100%;
+            height: 100%;
+   
+            object-fit: contain;
         }
      }
   

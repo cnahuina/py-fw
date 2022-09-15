@@ -11,6 +11,10 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 80%;
+  margin: 8px auto;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .container {
     width: 327px !important;
@@ -19,11 +23,37 @@ body {
 }
 @media (max-width: 768px) and (max-width: 425px) {
   .container {
-    width: 377px;
+    width: 376px;
     margin: 8px auto;
   }
 }
 
+.cardButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  padding: 32px 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-right: 1rem;
+}
+.cardButton:last-child {
+  margin-right: 0;
+}
+.cardButton img {
+  width: 21px;
+  margin-bottom: 23px;
+}
+.cardButton span {
+  background: #EFEFF5;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #121826;
+  padding: 2px 12px;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .cardButton {
     display: flex;
@@ -81,6 +111,12 @@ body {
   }
 }
 
+.item {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .item {
     margin-top: 8px;
@@ -98,6 +134,17 @@ body {
   }
 }
 
+.cardResumeComponent {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+  border-radius: 12px;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .cardResumeComponent {
     margin: 8px 0;
@@ -161,6 +208,43 @@ body {
   }
 }
 
+.cardWellcomeComponent {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.cardWellcomeComponent span {
+  display: flex;
+  flex-direction: row;
+}
+.cardWellcomeComponent .title {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+}
+.cardWellcomeComponent h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #6B7280;
+}
+.cardWellcomeComponent h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+.cardWellcomeComponent img {
+  width: 86px;
+  height: 90px;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .cardWellcomeComponent {
     margin-top: 24px;
@@ -253,6 +337,18 @@ body {
   color: #B3348D;
 }
 
+.containerCarrousel {
+  width: 80%;
+  margin: 24px auto;
+  flex-direction: column;
+}
+.containerCarrousel h1 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 17px;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .containerCarrousel {
     width: 348px !important;
@@ -282,6 +378,17 @@ body {
   }
 }
 
+.containerFull {
+  margin-top: 60px;
+  margin-bottom: 140px;
+  width: 100%;
+  height: 51px;
+  background-color: #BBDFDF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .containerFull {
     margin-top: 40px;
@@ -309,6 +416,13 @@ body {
   }
 }
 
+.asideMenu {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 0;
+  width: 80%;
+  justify-content: center;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .asideMenu {
     display: flex;
@@ -323,11 +437,38 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    width: 377px;
+    width: 376px;
     justify-content: space-between;
   }
 }
 
+.cardComponent {
+  width: 200px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+  margin-right: 1rem;
+}
+.cardComponent:last-child {
+  margin-right: 0rem;
+}
+.cardComponent img {
+  width: 40px;
+}
+.cardComponent p {
+  width: 56px;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .cardComponent {
     background-color: #ffffff;
@@ -377,6 +518,16 @@ body {
   }
 }
 
+.carrouselBanner {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.carrouselBanner::-webkit-scrollbar {
+  display: none;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .carrouselBanner {
     display: flex;
@@ -402,6 +553,37 @@ body {
   }
 }
 
+.cardBannerComponent {
+  position: relative;
+  margin-right: 12px;
+  flex: 1;
+}
+.cardBannerComponent img {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.8) 100%);
+  border-radius: 0px 0px 8px 8px;
+}
+.cardBannerComponent .text {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+.cardBannerComponent .text span {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.cardBannerComponent .text h5 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .cardBannerComponent {
     position: relative;
@@ -465,6 +647,12 @@ body {
   }
 }
 
+.headerComponent {
+  padding: 8px 0 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #BBDFDF;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .headerComponent {
     padding: 8px 0 14px;
@@ -482,6 +670,36 @@ body {
   }
 }
 
+.NavBottomBar {
+  background-color: #FAFAFC;
+  z-index: 100000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 0;
+}
+.NavBottomBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.NavBottomBar ul li {
+  list-style: none;
+}
+.NavBottomBar ul li a {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #121826;
+}
+.NavBottomBar ul li a img {
+  margin-bottom: 8px;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .NavBottomBar {
     background-color: #FAFAFC;
@@ -547,6 +765,16 @@ body {
   }
 }
 
+.backNavComponent {
+  width: 327px;
+  margin: 24px;
+  align-items: center;
+  position: absolute;
+}
+.backNavComponent img {
+  width: 32px;
+  height: 32px;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .backNavComponent {
     width: 327px;
@@ -561,7 +789,7 @@ body {
 }
 @media (max-width: 768px) and (max-width: 425px) {
   .backNavComponent {
-    width: 377px;
+    width: 327px;
     margin: 24px;
     align-items: center;
     position: absolute;
@@ -572,6 +800,35 @@ body {
   }
 }
 
+.cardModal {
+  border-radius: 32px 32px 0 0;
+  padding: 32px 24px;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.cardModal .headerModal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.cardModal .headerModal .text h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #121826;
+}
+.cardModal .headerModal .text p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  color: #64748B;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .cardModal {
     border-radius: 32px 32px 0 0;
@@ -635,6 +892,12 @@ body {
   }
 }
 
+.accordion__button {
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .accordion__button {
     background-color: transparent !important;
@@ -652,6 +915,10 @@ body {
   }
 }
 
+.accordion__heading, .accordion__item {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .accordion__heading, .accordion__item {
     border-radius: 16px !important;
@@ -665,6 +932,9 @@ body {
   }
 }
 
+.accordion__heading {
+  margin-bottom: 0px !important;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .accordion__heading {
     margin-bottom: 0px !important;
@@ -676,6 +946,14 @@ body {
   }
 }
 
+.accordion__item {
+  border: 1px solid #E2E8F0 !important;
+  margin-bottom: 8px;
+}
+.accordion__item:hover {
+  border: 1px solid #7CCBC7 !important;
+  background-color: #F8FAFC;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .accordion__item {
     border: 1px solid #E2E8F0 !important;
@@ -697,6 +975,10 @@ body {
   }
 }
 
+.accordion {
+  border: 0px !important;
+  border-radius: 8px !important;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .accordion {
     border: 0px !important;
@@ -717,15 +999,22 @@ body {
   font-size: 10px;
   line-height: 12px;
   color: #121826;
-  padding: 8px 36px;
-  width: 129px;
+  padding: 8px 24px;
+  margin-bottom: 8px;
 }
 
+.containerAccordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .containerAccordion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) and (max-width: 425px) {
@@ -733,17 +1022,29 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
+.coverProfile img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+}
 @media (max-width: 376px) and (max-width: 425px) {
   .coverProfile img {
     width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
   }
 }
 @media (max-width: 768px) and (max-width: 425px) {
   .coverProfile img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 

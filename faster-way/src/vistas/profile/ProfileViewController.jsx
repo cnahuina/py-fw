@@ -20,7 +20,7 @@ export const ProfileViewController = () => {
         <>
             <BackNavigation />
             <div className="coverProfile">
-                <img src={CoverProfile} alt="" />
+                <img src={"https://fasterwaybackoffice.com/accounts/default1/files/Untitled%20design.png"} alt="" />
             </div>
             <div className="cardModal">
                 <div className="headerModal">
@@ -64,6 +64,9 @@ export const ProfileViewController = () => {
                         <AccordionItemPanel>
                             <div className="containerAccordion">
                                 <div className="tag">Wellness</div>
+                                <div className="tag">Wellness</div>
+
+                                <div className="tag">Nutrition</div>
                                 <div className="tag">Nutrition</div>
                             </div>
                         </AccordionItemPanel>
