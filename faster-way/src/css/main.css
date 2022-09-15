@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap");
+body {
+  font-family: "Inter";
+  box-sizing: border-box;
+  background-color: #FAFAFC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 327px;
+    margin: 8px auto;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .cardButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 158px;
+    padding: 32px 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+  }
+  .cardButton img {
+    width: 21px;
+    margin-bottom: 23px;
+  }
+  .cardButton span {
+    background: #EFEFF5;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #121826;
+    padding: 2px 12px;
+  }
+}
+
+.item {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .cardResumeComponent {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+    border-radius: 12px;
+  }
+  .cardResumeComponent .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardResumeComponent .col h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #121826;
+  }
+  .cardResumeComponent .col h5 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #64748B;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .cardWellcomeComponent {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .cardWellcomeComponent span {
+    display: flex;
+    flex-direction: row;
+  }
+  .cardWellcomeComponent .title {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+  }
+  .cardWellcomeComponent h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #6B7280;
+  }
+  .cardWellcomeComponent h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #000000;
+  }
+  .cardWellcomeComponent img {
+    width: 86px;
+    height: 90px;
+  }
+}
+
+.btn-primary {
+  background: rgba(179, 52, 141, 0.1);
+  border-radius: 5px;
+  padding: 11px 24px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #B3348D;
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .containerCarrousel {
+    width: 348px;
+    margin: 24px 0 0 auto;
+    flex-direction: column;
+  }
+  .containerCarrousel h1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .containerFull {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    width: 100%;
+    height: 51px;
+    background-color: #BBDFDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .asideMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 327px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .cardComponent {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+  }
+  .cardComponent img {
+    width: 40px;
+  }
+  .cardComponent p {
+    width: 56px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.carrouselBanner {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.carrouselBanner::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .cardBannerComponent {
+    position: relative;
+    margin-right: 12px;
+  }
+  .cardBannerComponent img {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 0px 0px 8px 8px;
+  }
+  .cardBannerComponent .text {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+  .cardBannerComponent .text span {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+  .cardBannerComponent .text h5 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .headerComponent {
+    padding: 8px 0 14px;
+    display: flex;
+    justify-content: center;
+    background-color: #BBDFDF;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 767px) {
+  .NavBottomBar {
+    background-color: #FAFAFC;
+    z-index: 100000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .NavBottomBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .NavBottomBar ul li {
+    list-style: none;
+  }
+  .NavBottomBar ul li a {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #121826;
+  }
+  .NavBottomBar ul li a img {
+    margin-bottom: 8px;
+  }
+}
+
+.backNavComponent {
+  width: 327px;
+  margin: 24px;
+  align-items: center;
+  position: absolute;
+}
+.backNavComponent img {
+  width: 32px;
+  height: 32px;
+}
+
+.cardModal {
+  border-radius: 32px 32px 0 0;
+  padding: 32px 24px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.cardModal .headerModal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.cardModal .headerModal .text h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #121826;
+}
+.cardModal .headerModal .text p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  color: #64748B;
+}
+
+.accordion__button {
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.accordion__heading, .accordion__item {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.accordion__heading {
+  margin-bottom: 0px !important;
+}
+
+.accordion__item {
+  border: 1px solid #E2E8F0 !important;
+  margin-bottom: 8px;
+}
+.accordion__item:hover {
+  border: 1px solid #7CCBC7 !important;
+  background-color: #F8FAFC;
+}
+
+.accordion {
+  border: 0px !important;
+  border-radius: 8px !important;
+}
+
+.tag {
+  background: #EFEFF5;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #121826;
+  padding: 8px 36px;
+  width: 129px;
+}
+
+.containerAccordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

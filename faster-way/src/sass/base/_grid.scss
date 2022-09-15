@@ -1,0 +1,28 @@
+
+//-------- MEDIAQUERIES --------
+$phone-s: 375px;
+
+$tablet_m: 768px;
+$tablet_l: 1024px;
+
+$desktop_xl: 1360px;
+$desktop_2xl: 1600px;
+
+
+
+@mixin phone {
+  @media (max-width: #{$phone-s}) and (max-width: #{$tablet_m - 1}) {
+    @content;
+  }
+}
+
+@mixin tablet-l {
+  @media (min-width: #{$tablet_l}) and (max-width: #{$tablet_l}) {
+    @content;
+  }
+}
+@mixin tablet-p {
+    @media (min-width: #{$tablet_m}) and (max-width: #{$tablet_l - 1}) {
+      @content;
+    }
+  }
