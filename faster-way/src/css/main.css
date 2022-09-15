@@ -11,22 +11,60 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
   .container {
-    width: 327px;
+    width: 327px !important;
+    margin: 8px auto;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .container {
+    width: 377px;
     margin: 8px auto;
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
   .cardButton {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 158px;
+    flex: 1 1;
     padding: 32px 24px;
     background-color: #ffffff;
     border-radius: 16px;
+    margin-right: 1rem;
+  }
+  .cardButton:last-child {
+    margin-right: 0;
+  }
+  .cardButton img {
+    width: 21px;
+    margin-bottom: 23px;
+  }
+  .cardButton span {
+    background: #EFEFF5;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #121826;
+    padding: 2px 12px;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .cardButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+    padding: 32px 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin-right: 1rem;
+  }
+  .cardButton:last-child {
+    margin-right: 0;
   }
   .cardButton img {
     width: 21px;
@@ -43,14 +81,55 @@ body {
   }
 }
 
-.item {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media (max-width: 376px) and (max-width: 425px) {
+  .item {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .item {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .cardResumeComponent {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+    border-radius: 12px;
+  }
+  .cardResumeComponent .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardResumeComponent .col h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #121826;
+  }
+  .cardResumeComponent .col h5 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #64748B;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .cardResumeComponent {
     margin: 8px 0;
     display: flex;
@@ -82,7 +161,46 @@ body {
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .cardWellcomeComponent {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .cardWellcomeComponent span {
+    display: flex;
+    flex-direction: row;
+  }
+  .cardWellcomeComponent .title {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+  }
+  .cardWellcomeComponent h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #6B7280;
+  }
+  .cardWellcomeComponent h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #000000;
+  }
+  .cardWellcomeComponent img {
+    width: 86px;
+    height: 90px;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .cardWellcomeComponent {
     margin-top: 24px;
     display: flex;
@@ -135,9 +253,23 @@ body {
   color: #B3348D;
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
   .containerCarrousel {
-    width: 348px;
+    width: 348px !important;
+    margin: 24px 0 0 auto;
+    flex-direction: column;
+  }
+  .containerCarrousel h1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .containerCarrousel {
+    width: 401px;
     margin: 24px 0 0 auto;
     flex-direction: column;
   }
@@ -150,7 +282,20 @@ body {
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .containerFull {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    width: 100%;
+    height: 51px;
+    background-color: #BBDFDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .containerFull {
     margin-top: 40px;
     margin-bottom: 140px;
@@ -164,17 +309,50 @@ body {
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
   .asideMenu {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    width: 327px;
+    width: 327px !important;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .asideMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 377px;
     justify-content: space-between;
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .cardComponent {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+  }
+  .cardComponent img {
+    width: 40px;
+  }
+  .cardComponent p {
+    width: 56px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .cardComponent {
     background-color: #ffffff;
     display: flex;
@@ -199,18 +377,63 @@ body {
   }
 }
 
-.carrouselBanner {
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+@media (max-width: 376px) and (max-width: 425px) {
+  .carrouselBanner {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .carrouselBanner::-webkit-scrollbar {
+    display: none;
+  }
 }
-.carrouselBanner::-webkit-scrollbar {
-  display: none;
+@media (max-width: 768px) and (max-width: 425px) {
+  .carrouselBanner {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .carrouselBanner::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .cardBannerComponent {
+    position: relative;
+    margin-right: 12px;
+  }
+  .cardBannerComponent img {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 0px 0px 8px 8px;
+  }
+  .cardBannerComponent .text {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+  .cardBannerComponent .text span {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+  .cardBannerComponent .text h5 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .cardBannerComponent {
     position: relative;
     margin-right: 12px;
@@ -242,7 +465,15 @@ body {
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .headerComponent {
+    padding: 8px 0 14px;
+    display: flex;
+    justify-content: center;
+    background-color: #BBDFDF;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .headerComponent {
     padding: 8px 0 14px;
     display: flex;
@@ -251,7 +482,39 @@ body {
   }
 }
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (max-width: 376px) and (max-width: 425px) {
+  .NavBottomBar {
+    background-color: #FAFAFC;
+    z-index: 100000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .NavBottomBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .NavBottomBar ul li {
+    list-style: none;
+  }
+  .NavBottomBar ul li a {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #121826;
+  }
+  .NavBottomBar ul li a img {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
   .NavBottomBar {
     background-color: #FAFAFC;
     z-index: 100000;
@@ -284,75 +547,167 @@ body {
   }
 }
 
-.backNavComponent {
-  width: 327px;
-  margin: 24px;
-  align-items: center;
-  position: absolute;
+@media (max-width: 376px) and (max-width: 425px) {
+  .backNavComponent {
+    width: 327px;
+    margin: 24px;
+    align-items: center;
+    position: absolute;
+  }
+  .backNavComponent img {
+    width: 32px;
+    height: 32px;
+  }
 }
-.backNavComponent img {
-  width: 32px;
-  height: 32px;
-}
-
-.cardModal {
-  border-radius: 32px 32px 0 0;
-  padding: 32px 24px;
-  position: absolute;
-  z-index: 100;
-  bottom: 0;
-  width: 100%;
-  background-color: #fff;
-}
-.cardModal .headerModal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
-}
-.cardModal .headerModal .text h2 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 120%;
-  color: #121826;
-}
-.cardModal .headerModal .text p {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.2px;
-  color: #64748B;
+@media (max-width: 768px) and (max-width: 425px) {
+  .backNavComponent {
+    width: 377px;
+    margin: 24px;
+    align-items: center;
+    position: absolute;
+  }
+  .backNavComponent img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-.accordion__button {
-  background-color: transparent !important;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+@media (max-width: 376px) and (max-width: 425px) {
+  .cardModal {
+    border-radius: 32px 32px 0 0;
+    padding: 32px 24px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  .cardModal .headerModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  .cardModal .headerModal .text h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #121826;
+  }
+  .cardModal .headerModal .text p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #64748B;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .cardModal {
+    border-radius: 32px 32px 0 0;
+    padding: 32px 24px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  .cardModal .headerModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  .cardModal .headerModal .text h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #121826;
+  }
+  .cardModal .headerModal .text p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #64748B;
+  }
 }
 
-.accordion__heading, .accordion__item {
-  border-radius: 16px !important;
-  overflow: hidden;
+@media (max-width: 376px) and (max-width: 425px) {
+  .accordion__button {
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .accordion__button {
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
-.accordion__heading {
-  margin-bottom: 0px !important;
+@media (max-width: 376px) and (max-width: 425px) {
+  .accordion__heading, .accordion__item {
+    border-radius: 16px !important;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .accordion__heading, .accordion__item {
+    border-radius: 16px !important;
+    overflow: hidden;
+  }
 }
 
-.accordion__item {
-  border: 1px solid #E2E8F0 !important;
-  margin-bottom: 8px;
+@media (max-width: 376px) and (max-width: 425px) {
+  .accordion__heading {
+    margin-bottom: 0px !important;
+  }
 }
-.accordion__item:hover {
-  border: 1px solid #7CCBC7 !important;
-  background-color: #F8FAFC;
+@media (max-width: 768px) and (max-width: 425px) {
+  .accordion__heading {
+    margin-bottom: 0px !important;
+  }
 }
 
-.accordion {
-  border: 0px !important;
-  border-radius: 8px !important;
+@media (max-width: 376px) and (max-width: 425px) {
+  .accordion__item {
+    border: 1px solid #E2E8F0 !important;
+    margin-bottom: 8px;
+  }
+  .accordion__item:hover {
+    border: 1px solid #7CCBC7 !important;
+    background-color: #F8FAFC;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .accordion__item {
+    border: 1px solid #E2E8F0 !important;
+    margin-bottom: 8px;
+  }
+  .accordion__item:hover {
+    border: 1px solid #7CCBC7 !important;
+    background-color: #F8FAFC;
+  }
+}
+
+@media (max-width: 376px) and (max-width: 425px) {
+  .accordion {
+    border: 0px !important;
+    border-radius: 8px !important;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .accordion {
+    border: 0px !important;
+    border-radius: 8px !important;
+  }
 }
 
 .tag {
@@ -366,8 +721,108 @@ body {
   width: 129px;
 }
 
-.containerAccordion {
+@media (max-width: 376px) and (max-width: 425px) {
+  .containerAccordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .containerAccordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 376px) and (max-width: 425px) {
+  .coverProfile img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .coverProfile img {
+    width: 100%;
+  }
+}
+
+.loginContainer {
+  width: 327px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+}
+.loginContainer h2 {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #363435;
+}
+.loginContainer p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #64748B;
+}
+.loginContainer span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #1E1E1E;
+}
+
+.formGroup {
+  padding-top: 32px;
+  margin-bottom: 120px;
+}
+
+input[type=text], input[type=password] {
+  width: 327px;
+  height: 56px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  color: #121826;
+  border: none;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+  color: #94A3B8;
+}
+
+.btn-default {
+  width: 320px;
+  height: 60px;
+  background: linear-gradient(90.31deg, rgba(255, 255, 255, 0.2) 1.75%, rgba(0, 0, 0, 0) 99.81%), #B3348D;
+  box-shadow: 0px 10px 12px rgba(136, 195, 198, 0.2);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 19px 0;
+}
+
+.link-btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #16599F;
+  text-decoration: none;
+  margin-top: 24px;
 }

@@ -16,7 +16,11 @@ body {
 
 .container{
     @include phone {
-        width: $small;
+        width: $small!important;
+        margin: 8px auto;
+    }
+    @include phone-m {
+        width: $small2;
         margin: 8px auto;
     }
 }
@@ -26,11 +30,42 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // flex: 1 1;
-        width: 158px;
+        flex: 1 1;
         padding: 32px 24px;
         background-color: #ffffff;
         border-radius: 16px;
+        margin-right: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+        img{
+            width: 21px;
+            margin-bottom: 23px;
+        }
+        span{
+            background: #EFEFF5;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 12px;
+            color: #121826;
+            padding: 2px 12px;
+        }
+    }
+    @include phone-m{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1;
+        padding: 32px 24px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        margin-right: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
         img{
             width: 21px;
             margin-bottom: 23px;
@@ -47,14 +82,51 @@ body {
     }
 }
 .item{
-    margin-top: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include phone {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include phone-m {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .cardResumeComponent{
     @include phone{
+        margin: 8px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+        border-radius: 12px;
+        .col{
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: 0.2px;
+                color: #121826;
+            }
+            h5{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.2px;
+                color: #64748B;
+            }
+        }
+    }
+    @include phone-m{
         margin: 8px 0;
         display: flex;
         flex-direction: row;
@@ -123,8 +195,46 @@ body {
             height: 90px;
         }
     }
+    @include phone-m{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+        border-radius: 12px;
+        overflow: hidden;
+        span{
+            display: flex;
+            flex-direction: row;
+        }
+        .title{
+            display: flex;
+            padding: 24px;
+            align-items: center;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+            color: #6B7280;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+            color: #000000;
+        }
+        img{
+            width: 86px;
+            height: 90px;
+        }
+    }
 }
 .btn-primary{
+
     background: rgba(179, 52, 141, 0.1);
     border-radius: 5px;
     padding: 11px 24px;
@@ -139,7 +249,20 @@ body {
 }
 .containerCarrousel {
     @include phone {
-        width: 348px;
+        width: 348px!important;
+        margin: 24px 0 0 auto;
+        flex-direction: column;
+
+      h1{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        margin-bottom: 17px;
+      }
+    }
+    @include phone-m {
+        width: 401px;
         margin: 24px 0 0 auto;
         flex-direction: column;
 
@@ -165,6 +288,17 @@ body {
         align-items: center;
         justify-content: center;
     }
+    @include phone-m{
+        margin-top: 40px;
+        margin-bottom: 140px;
+        width: 100%;
+        height: 51px;
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .asideMenu{
@@ -172,7 +306,14 @@ body {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        width: $small;
+        width: $small!important;
+        justify-content: space-between; 
+    }
+    @include phone-m{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: $small2;
         justify-content: space-between; 
     }
 
@@ -202,17 +343,51 @@ body {
             text-transform: uppercase;
         }
     }
-  
+    @include phone-m{
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 24px;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 24px 32px 6px rgba(82, 82, 152, 0.06);
+        img{
+            width: 40px;
+        }
+    
+        p{  
+            width: 56px;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 10px;
+            line-height: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .carrouselBanner{
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    &::-webkit-scrollbar{
-        display: none;
+    @include phone {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    @include phone-m {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
 }
 
@@ -251,10 +426,50 @@ body {
         }
         
     }
+    @include phone-m{
+        position: relative;
+        margin-right: 12px;
+        
+        img{
+            position: relative;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.8) 100%);
+            border-radius: 0px 0px 8px 8px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            span{
+               
+                
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+                color: #ffffff;
+            }
+            h5{
+                
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #ffffff;
+            }
+        }
+        
+    }
 }
 
 .headerComponent {
     @include phone {
+        padding: 8px 0 14px;
+        display: flex;
+        justify-content: center;
+        background-color: $primary-color;
+    } 
+    @include phone-m {
         padding: 8px 0 14px;
         display: flex;
         justify-content: center;
@@ -299,78 +514,193 @@ body {
         }
 
     }
+    @include phone-m {
+        background-color: $light-color;
+        z-index: 100000;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 12px 0;
+        ul {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+
+                a {
+                    font-size: 10px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: $dark-color;
+
+                    img {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 .backNavComponent{
-    width: $small;
-    margin: 24px;
-    align-items: center;
-    position: absolute;
-    img{
-        width: 32px;
-        height: 32px;
+    @include phone {
+        width: $small;
+        margin: 24px;
+        align-items: center;
+        position: absolute;
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+    @include phone-m {
+        width: $small2;
+        margin: 24px;
+        align-items: center;
+        position: absolute;
+        img{
+            width: 32px;
+            height: 32px;
+        }
     }
 }
 
 .cardModal{
-    border-radius: 32px 32px 0 0 ;
-    padding: 32px 24px;
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    width: 100%;
-    background-color: #fff;
-    .headerModal{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 32px;
-        .text{
-            h2{
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 120%;
-                color: #121826;
-            }
-            p{
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 15px;
-                letter-spacing: 0.2px;
-                color: #64748B;
+    @include phone {
+        border-radius: 32px 32px 0 0 ;
+        padding: 32px 24px;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        .headerModal{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            .text{
+                h2{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 120%;
+                    color: #121826;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.2px;
+                    color: #64748B;
 
+                }
             }
         }
     }
-    
+    @include phone-m {
+        border-radius: 32px 32px 0 0 ;
+        padding: 32px 24px;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        .headerModal{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            .text{
+                h2{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 120%;
+                    color: #121826;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.2px;
+                    color: #64748B;
+
+                }
+            }
+        }
+    }
 }
 .accordion__button{
-    background-color: transparent!important;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    @include phone {
+        background-color: transparent!important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    @include phone-m {
+        background-color: transparent!important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
 .accordion__heading, .accordion__item{
-    border-radius: 16px!important;
-    overflow: hidden;
+    @include phone {
+        border-radius: 16px!important;
+        overflow: hidden;
+    }
+    @include phone-m {
+        border-radius: 16px!important;
+        overflow: hidden;
+    }
 }
 .accordion__heading{
-    // border: 1px solid #E2E8F0;
-    margin-bottom: 0px!important;
+    @include phone {
+        margin-bottom: 0px!important;
+    }
+    @include phone-m {
+        margin-bottom: 0px!important;
+    }
 }
 .accordion__item{
-    border: 1px solid #E2E8F0!important;
-    margin-bottom: 8px;
-    &:hover{
-        border: 1px solid #7CCBC7!important;
-        background-color: #F8FAFC;
+    @include phone {
+        border: 1px solid #E2E8F0!important;
+        margin-bottom: 8px;
+        &:hover{
+            border: 1px solid #7CCBC7!important;
+            background-color: #F8FAFC;
+        }
+    }
+    @include phone-m {
+        border: 1px solid #E2E8F0!important;
+        margin-bottom: 8px;
+        &:hover{
+            border: 1px solid #7CCBC7!important;
+            background-color: #F8FAFC;
+        }
     }
 }
 
 .accordion{
-    border: 0px!important;
-    border-radius: 8px!important;
+    @include phone {
+        border: 0px!important;
+        border-radius: 8px!important;
+    }
+    @include phone-m {
+        border: 0px!important;
+        border-radius: 8px!important;
+    }
 }
 
 .tag{
@@ -384,10 +714,109 @@ body {
     width: 129px;
 }
 .containerAccordion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include phone-m {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
+.coverProfile{
+    @include phone {
+       img{
+            width: 100%;
+       }
+    }
+    @include phone-m {
+        img{
+             width: 100%;
+        }
+     }
+  
+}
 
+.loginContainer{
+    width: $small;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+    h2{
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #363435;
+    }
+    p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #64748B;
+    }
+    span{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.2px;
 
+        color: #1E1E1E;
+    }
+}
+
+.formGroup{
+    padding-top: 32px;
+   margin-bottom: 120px;
+}
+input[type=text], input[type=password]{
+    width: 327px;
+    height: 56px;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+    color:#121826;
+    border: none;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+input[type=text]::placeholder ,input[type=password]::placeholder {
+    color: #94A3B8;
+}
+
+.btn-default{
+    width: 320px;
+    height: 60px;
+    background: linear-gradient(90.31deg, rgba(255, 255, 255, 0.2) 1.75%, rgba(0, 0, 0, 0) 99.81%), #B3348D;
+    box-shadow: 0px 10px 12px rgba(136, 195, 198, 0.2);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 19px 0;
+}
+
+.link-btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #16599F;
+    text-decoration: none;
+    margin-top: 24px;
+}
